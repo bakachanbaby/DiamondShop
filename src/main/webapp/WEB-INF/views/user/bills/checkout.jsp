@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="/WEB-INF/views/layout/user/taglib.jsp" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +18,7 @@
         <hr class="soft"/>
         <div class="row">
             <div class="well">
+                <%--Form thanh toán đơn hàng--%>
                 <form:form class="form-horizontal" action="checkout" method="POST" modelAttribute="bills">
                     <h3>Thanh toán đơn hàng</h3>
                     <div class="control-group">
@@ -54,8 +53,7 @@
                     </div>
                     <div class="control-group">
                         <div class="controls">
-                            <input type="submit" name="submitAccount" value="Register"
-                                   class="shopBtn exclusive">
+                            <input type="submit" name="submitAccount" value="Register" class="shopBtn exclusive">
                         </div>
                     </div>
                 </form:form>

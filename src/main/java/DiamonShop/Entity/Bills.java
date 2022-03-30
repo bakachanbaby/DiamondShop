@@ -1,5 +1,6 @@
 package DiamonShop.Entity;
 
+//table hóa đơn
 public class Bills {
 	private long id;
 	private String user;

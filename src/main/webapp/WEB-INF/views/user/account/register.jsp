@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="/WEB-INF/views/layout/user/taglib.jsp" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +11,7 @@
     <%@ include file="/WEB-INF/views/layout/user/left-body.jsp" %>
     <div class="span9">
         <ul class="breadcrumb">
-            <li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+            <li><a href="<c:url value="/trang-chu" />">Trang chủ</a> <span class="divider">/</span></li>
             <li class="active">Người dùng</li>
         </ul>
         <h3>Login</h3>
@@ -21,12 +19,12 @@
         <div class="row">
             <div class="span4">
                 <div class="well">
+                    <%--Form đăng ký tài khoản--%>
                     <h5>Đăng ký tài khoản</h5>
+                    <%--In ra trạng thái đăng ký tài khoản (thành công hay không)--%>
                     <h5>${status}</h5>
-
                     <br/>
                     <form:form action="dang-ky" method="POST" modelAttribute="user">
-
                         <div class="control-group">
                             <label class="control-label" for="inputEmail">Email</label>
                             <div class="controls">
@@ -62,9 +60,10 @@
             <div class="span1">&nbsp;</div>
             <div class="span4">
                 <div class="well">
+                    <%--Form đăng nhập tài khoản--%>
                     <h5>Đăng nhập hệ thống</h5>
+                    <%--In ra trạng thái đăng nhập tài khoản (thành công hay không)--%>
                     <h5>${statusLogin }</h5>
-
                     <form:form action="dang-nhap" method="POST" modelAttribute="user">
                         <div class="control-group">
                             <label class="control-label" for="inputEmail">Tài khoản</label>
@@ -89,7 +88,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 </body>

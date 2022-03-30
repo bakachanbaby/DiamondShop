@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <decorators defaultdir="/WEB-INF/views/layout">
+    <!--Url dẫn đến user-->
     <decorator name="user" page="user.jsp">
         <pattern>/*</pattern>
     </decorator>
+    <!--Url dẫn đến admon-->
     <decorator name="admin" page="admin.jsp">
         <pattern>/quan-tri/*</pattern>
     </decorator>

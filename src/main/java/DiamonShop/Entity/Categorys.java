@@ -1,5 +1,6 @@
 package DiamonShop.Entity;
 
+//Table loại sản phẩm
 public class Categorys {
 	private int id;
 	private String name;

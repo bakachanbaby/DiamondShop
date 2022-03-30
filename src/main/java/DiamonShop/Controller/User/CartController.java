@@ -46,7 +46,7 @@ public class CartController extends BaseController {
 		cart = cartService.AddCart(id, cart);
 		session.setAttribute("Cart", cart);
 		session.setAttribute("TotalQuantyCart", cartService.TotalQuanty(cart));
-		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));git
+		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
 		return "redirect:" + request.getHeader("Referer");
 	}
 

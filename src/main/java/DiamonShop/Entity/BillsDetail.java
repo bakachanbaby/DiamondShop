@@ -1,5 +1,6 @@
 package DiamonShop.Entity;
 
+//Table chi tiết hóa đơn
 public class BillsDetail {
 	private long id;
 	private long id_product;

@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="/WEB-INF/views/layout/user/taglib.jsp" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +12,7 @@
 
     <div class="span9">
         <ul class="breadcrumb">
-            <li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+            <li><a href="<c:url  value="/trang-chu"/>">Trang chủ</a> <span class="divider">/</span></li>
             <li class="active">So sánh sản phẩm</li>
         </ul>
         <div class="well well-small">
@@ -22,7 +20,6 @@
                 Sản phẩm so sánh <small class="pull-right"> 2 sản phẩm so sánh </small>
             </h3>
             <hr class="soft"/>
-
             <table id="compairTbl" class="table table-bordered">
                 <thead>
                 <tr>
@@ -39,14 +36,16 @@
                             the most successful business spheres. We always stay in touch
                             with the latest fashion tendencies - that is why our goods are
                             so popular and we have a great number of faithful customers all
-                            over the country.</p> <img src="assets/img/d.jpg" alt=""/>
+                            over the country.</p>
+                        <img src="assets/img/d.jpg" alt=""/>
                         <form class="form-horizontal qtyFrm">
                             <h3>$140.00</h3>
                             <br/>
                             <div class="btn-group">
-                                <a href="product_details.html" class="defaultBtn btn-large"><span
-                                        class=" icon-shopping-cart"></span> Add to cart</a> <a
-                                    href="product_details.html" class="shopBtn btn-large">VIEW</a>
+                                <a href="#" class="defaultBtn btn-large">
+                                    <span class=" icon-shopping-cart"></span> Add to cart
+                                </a>
+                                <a href="#" class="shopBtn btn-large">VIEW</a>
                             </div>
                         </form>
                     </td>
@@ -55,15 +54,17 @@
                             the most successful business spheres. We always stay in touch
                             with the latest fashion tendencies - that is why our goods are
                             so popular and we have a great number of faithful customers all
-                            over the country.</p> <img src="assets/img/e.jpg" alt=""/>
-
+                            over the country.
+                        </p>
+                        <img src="assets/img/e.jpg" alt=""/>
                         <form class="form-horizontal qtyFrm">
                             <h3>$140.00</h3>
                             <br/>
                             <div class="btn-group">
-                                <a href="product_details.html" class="defaultBtn btn-large"><span
-                                        class=" icon-shopping-cart"></span> Add to cart</a> <a
-                                    href="product_details.html" class="shopBtn btn-large">VIEW</a>
+                                <a href="#" class="defaultBtn btn-large">
+                                    <span class=" icon-shopping-cart"></span> Add to cart
+                                </a>
+                                <a href="#" class="shopBtn btn-large">VIEW</a>
                             </div>
                         </form>
                     </td>
@@ -96,8 +97,7 @@
                 </tbody>
             </table>
             <div class="alignR">
-                <a href="products.html" class="shopBtn btn-large">Back to
-                    Products Page</a>
+                <a href="<c:url  value="/san-pham/1"/>" class="shopBtn btn-large">Back to Products Page</a>
             </div>
         </div>
 

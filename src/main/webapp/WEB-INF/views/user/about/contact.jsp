@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="/WEB-INF/views/layout/user/taglib.jsp" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,14 +25,12 @@
                         <label class="control-label" for="inputEmail">Email</label>
                         <div class="controls">
                             <input type="text" placeholder="Nhập email" class="input-xlarge"/>
-
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputEmail">Họ và tên</label>
                         <div class="controls">
                             <input type="text" placeholder="Nhập họ tên" class="input-xlarge"/>
-
                         </div>
                     </div>
                     <div class="control-group">
@@ -45,11 +41,9 @@
                     </div>
                     <div class="controls">
                         <button class="shopBtn" type="submit">Gửi email</button>
-
                     </div>
                 </fieldset>
             </form:form>
-
         </div>
     </div>
 </div>
