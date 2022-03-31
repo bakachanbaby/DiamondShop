@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
+//Mapper các giá trị của bảng các sản phẩm
 public class ProductsDtoMapper implements  RowMapper<ProductsDto>{
 
 	@Override

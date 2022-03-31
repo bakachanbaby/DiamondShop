@@ -1,6 +1,6 @@
 package DiamonShop.Entity;
 
-
+//Table sản phẩm slide
 public class Slides {
 	
 	private int id;

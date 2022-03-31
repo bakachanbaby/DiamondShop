@@ -8,8 +8,9 @@ import DiamonShop.Dto.ProductsDto;
 
 @Service
 public interface IProductService {
-
-	public ProductsDto GetDataProductById(long id);	
+	//Thực hiện lấy sản phẩm theo id sản phẩm
+	public ProductsDto GetDataProductById(long id);
+	//Thực hiện lấy sản phẩm theo phân loại sản phẩm đó
 	public List<ProductsDto> GetProductByIdCategory(int id);	
 
 }

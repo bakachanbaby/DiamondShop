@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
-
+//Mapper các giá trị của bảng các sản phẩm slide
 public class MapperSliders implements RowMapper<Slides>{
 
 	@Override

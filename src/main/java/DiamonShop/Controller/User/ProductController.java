@@ -14,7 +14,7 @@ public class ProductController extends BaseController {
 	
 	@Autowired
 	private IProductService produtService;
-	
+	//Chuyển đến trang chi tiết sản phẩm theo id sản phẩm tương ứng
 	@RequestMapping(value = {"chi-tiet-san-pham/{id}"})
 	public ModelAndView Index(@PathVariable long id) {
 		_mvShare.setViewName("user/products/product");

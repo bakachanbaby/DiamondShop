@@ -1,5 +1,6 @@
 package DiamonShop.Dto;
 
+//Bảng giỏ hàng
 public class CartDto {
 	private int quanty;
 	private double totalPrice;

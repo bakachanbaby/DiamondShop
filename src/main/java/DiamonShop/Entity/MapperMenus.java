@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
+//Mapper các giá trị của bảng danh mục
 public class MapperMenus implements RowMapper<Menus>{
 
 	@Override

@@ -12,12 +12,16 @@ import DiamonShop.Entity.Slides;
 
 @Service
 public interface IHomeService {
+	//Thực hiện lấy sản phẩm slide
 	@Autowired 
 	public List<Slides> GetDataSlide();
+	//THực hiện lấy phân loại các sản phẩm
 	@Autowired 
 	public List<Categorys> GetDataCategorys();
+	//Thưc hiện lấy danh mục các sản phẩm
 	@Autowired 
 	public List<Menus> GetDataMenus();
+	//Thực hiện lấy các sản phẩm
 	@Autowired 
 	public List<ProductsDto> GetDataProducts();
 }

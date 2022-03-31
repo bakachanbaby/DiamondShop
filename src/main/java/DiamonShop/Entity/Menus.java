@@ -1,5 +1,6 @@
 package DiamonShop.Entity;
 
+//Table user
 public class Menus {
 	private int id;
 	private String name;

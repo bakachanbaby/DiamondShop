@@ -11,6 +11,7 @@ import DiamonShop.Entity.MapperCategorys;
 @Repository
 public class CategorysDao extends BaseDao {
 
+	//Lấy giá trị các phân loại sản phẩm
 	public List<Categorys> GetDataCategorys(){
 		List<Categorys> list = new ArrayList<Categorys>();
 		String sql = "SELECT * FROM categorys";

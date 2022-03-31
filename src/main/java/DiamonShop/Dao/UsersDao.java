@@ -8,6 +8,7 @@ import DiamonShop.Entity.Users;
 @Repository
 public class UsersDao extends BaseDao {
 
+	//Thêm tài khoản
 	public int AddAccount(Users user) {
 		StringBuffer sql = new StringBuffer();
 		sql.append("INSERT ");
@@ -29,6 +30,7 @@ public class UsersDao extends BaseDao {
 		return insert;
 	}
 
+	//Lấy thông tin người dùng theo tài khoản
 	public Users GetUserByAccount(Users user) {
 		String sql = "SELECT * FROM users WHERE user = '" + user.getUser() + "' ";
 		Users rerult = _jdbcTemplate.queryForObject(sql, new MapperUsers());

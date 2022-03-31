@@ -20,6 +20,7 @@ public class CategoryController extends BaseController {
 
 	private int pageSize = 9;
 
+	//Thực hiện gửi đến trang sản phẩm với id phân loại sản phẩm tương ứng
 	@RequestMapping(value = {"/san-pham/{id}"})
 	public ModelAndView Index(@PathVariable String id)
 	{
@@ -32,7 +33,7 @@ public class CategoryController extends BaseController {
 		_mvShare.addObject("ProductsPaginate", categoryService.GetDataProductsPaginate(Integer.parseInt(id), paginateInfo.getStart(),pageSize));
 		return _mvShare;
 	}
-	
+	//Thực hiện gửi đến trang sản phẩm với id phân loại sản phẩm tương ứng và trang hiện tại của phân trang
 	@RequestMapping(value = {"/san-pham/{id}/{currentPage}"})
 	public ModelAndView Index(@PathVariable String id,@PathVariable String currentPage)
 	{

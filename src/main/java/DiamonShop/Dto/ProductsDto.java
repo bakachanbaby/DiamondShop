@@ -2,6 +2,7 @@ package DiamonShop.Dto;
 
 import java.sql.Date;
 
+//Bảng các sản phẩm
 public class ProductsDto {
 	private long id_product;
 	private int id_category;

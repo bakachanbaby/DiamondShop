@@ -14,7 +14,8 @@ public class BaseController  {
 	@Autowired
 	HomeServiceImpl _homeService;
 	public ModelAndView _mvShare = new ModelAndView();
-	
+
+	//Gửi các thông tin mặc định
 	@PostConstruct
 	public ModelAndView Init() {
 		_mvShare.addObject("menus", _homeService.GetDataMenus());

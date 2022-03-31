@@ -1,5 +1,6 @@
 package DiamonShop.Dto;
 
+//Bảng phân trang
 public class PaginatesDto {
 	private int currentPage;
 	private int pageSize;

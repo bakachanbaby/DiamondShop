@@ -11,7 +11,7 @@ import DiamonShop.Entity.Slides;
 @Repository
 public class SlidesDao  extends BaseDao{
 	
-	
+	//Lấy giá trị các sản phẩm slide
 	public List<Slides> GetDataSlide(){
 		List<Slides> list = new ArrayList<Slides>();
 		String sql = "SELECT * FROM slides";

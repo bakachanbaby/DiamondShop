@@ -11,7 +11,7 @@ import DiamonShop.Entity.Menus;
 @Repository
 public class MenusDao  extends BaseDao{
 	
-	
+	//Lấy giá trị các danh mục của trang web
 	public List<Menus> GetDataMenus(){
 		List<Menus> list = new ArrayList<Menus>();
 		String sql = "SELECT * FROM menu";

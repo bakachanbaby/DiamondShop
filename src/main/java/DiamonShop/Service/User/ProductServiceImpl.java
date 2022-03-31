@@ -17,7 +17,6 @@ public class ProductServiceImpl implements IProductService {
 	@Override
 	public ProductsDto GetDataProductById(long id) {
 		List<ProductsDto> listProducts = productsDao.GetDataProductById(id);
-		
 		return listProducts.get(0);
 	}
 
@@ -26,6 +25,4 @@ public class ProductServiceImpl implements IProductService {
 		return productsDao.GetAllProductsById(id);
 	}
 
-	
-	
 }
